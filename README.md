@@ -12,11 +12,6 @@ Requirements
 - PHP 7.4
 - MySQL 5.7 or 8
 
-Used Packages
-=============
-composer require laravel/socialite
-```
-
 Installation
 Clone the repo locally:
 
@@ -54,9 +49,9 @@ Create Facebook ID in following link:
 Database Migration
 ==================
 Run database migrations:
-
+```
 php artisan migrate
-
+```
 ## Server Run
 
 Run the dev server:

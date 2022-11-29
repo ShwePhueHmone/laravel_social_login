@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\FacebookController;
+use App\Http\Controllers\GoogleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,4 +22,9 @@ Route::get('/', function () {
 
 Route::get('auth/facebook', [FacebookController::class, 'redirectToFacebook'])->name('auth.facebook');
 Route::get('auth/facebook/callback', [FacebookController::class, 'handleFacebookCallback']);
-Route::get('/logout', [FacebookController::class, 'logout'])->name('logout');
+
+Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback']);
+
+Route::get('/dashboard', [DashBoardController::class, 'index'])->name('dashboard')->middleware('auth');
+Route::get('/logout', [DashBoardController::class, 'logout'])->name('logout');

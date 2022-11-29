@@ -42,8 +42,8 @@ class FacebookController extends Controller
                 $newUser = User::updateOrCreate(['email' => $user->email], [
                     'name' => $user->name,
                     'facebook_id' => $user->id,
-                    'password' => encrypt('123456dummy'),
                     'profile_photo_url' => $user->avatar,
+                    'password' => encrypt('123456dummy'),
                 ]);
 
                 Auth::login($newUser);
@@ -56,9 +56,4 @@ class FacebookController extends Controller
         }
     }
 
-    public function logout()
-    {
-        Auth::logout();
-        return redirect('/');
-    }
 }

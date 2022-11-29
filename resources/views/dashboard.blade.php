@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Facebook</title>
+    <title>Laravel Social Login Example</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light d-flex justify-content-end">
         <form class="d-flex">
               <li class="nav-item dropdown d-flex">
-                <img src="{{ Auth::user()->profile_photo_url }}" class="rounded-circle" alt="profile">
+                <img src="{{ Auth::user()->profile_photo_url }}" class="rounded-circle" width="30px" height="30px" alt="profile">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>{{ Auth::user()->name }}</span>
                 </a>

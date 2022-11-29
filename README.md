@@ -12,8 +12,10 @@ Requirements
 - PHP 7.4
 - MySQL 5.7 or 8
 
-Installation
+## Installation
+
 Clone the repo locally:
+```
 
 git clone https://github.com/ShwePhueHmone/laravel_social_login.git
 
@@ -44,7 +46,14 @@ Create Facebook ID in following link:
 > https://developers.facebook.com/
 <br>
 
-
+Google ID and Secret Key
+```
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+```
+Create Google ID in following link:
+> https://console.cloud.google.com/apis/dashboard 
+<br>
 
 Database Migration
 ==================

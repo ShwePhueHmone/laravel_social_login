@@ -59,6 +59,10 @@
                                 <i class="fab fa-google"></i>
                             </a>
 
+                            <a href="#" class="btn btn-black btn-floating mx-1">
+                                <i class="fab fa-github"></i>
+                            </a>
+
                         </div>
                         <div class="divider d-flex align-items-center my-4">
                             <p class="text-center fw-bold mx-3 mb-0">Or</p>
